@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #23252C;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root{
+  border: solid red 2px;
+  max-height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1em;
+  overflow: hidden;
+  width: 317px;
+  padding-inline: 2em;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  text-align: center;
+}
+
+.info-pic{
+  width: 317px;
+  margin-bottom: .5em;
+}
+
+.info-title{
+  color: #F3BF99;
+  font-size: 1.2em;
+}
+
+.info-buttons{
+  display: flex;
+  gap: 0.5em;
+  padding-top: .7em;
+  padding-bottom: 1em;
+}
+
+.info-buttons button{
+  width: 130px;
+  border-radius: .5em;
+  padding-block: .5em;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  gap: .3em;
+}
+
+.info-buttons button:hover,
+.info-buttons button:focus{
+  background-color: #F3BF99;
+  color: #23252C;
+  cursor: pointer;
+}
+
+.info-buttons button img{
+  width: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.about{
+  padding-bottom: 1em;
+}
