@@ -14,19 +14,25 @@ body{
 }
 
 #root{
-  border: solid red 2px;
-  max-height: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 1em;
+  border-radius: 3em;
   overflow: hidden;
-  width: 317px;
-  padding-inline: 2em;
+  width: 400px;
+  background-color: #1A1B21;
+  margin-top: 2em;
+}
+
+.info,
+.about,
+.interests{
+    padding: .7em 2em;
 }
 
 .info{
+  padding-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +42,7 @@ body{
 }
 
 .info-pic{
-  width: 317px;
+  width: 400px;
   margin-bottom: .5em;
 }
 
@@ -79,7 +85,37 @@ a{
   color: inherit;
 }
 
-
 .about{
   padding-bottom: 1em;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 1em;
+  padding-block: 1em;
+  margin-top: 1em;
+  background-color: #161619;
+}
+
+svg{
+  width: 40px;
+  height: 40px;
+  transition: ease-in-out .2s;
+}
+
+svg:hover{
+  transition: ease-in-out .2s;
+  transform: scale(1.2);
+}
+
+@media (max-width: 450px){
+  #root{
+    width: 300px;
+  }
+
+  .info-pic{
+    width: 300px;
+  }
 }
